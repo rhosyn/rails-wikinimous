@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="title-content"><h3> <%= @article.title %> </h3>
+    <%= link_to "Edit", edit_article_path, class: "navbar-wagon-item navbar-wagon-link" %></p>
+    <%= link_to "Delete", article_path(@article),
+        method: :delete,
+        data: { confirm: "Are you sure?" } %></div>
+  <hr />
+  <p> <%= @article.content %> </p>
+</div>
